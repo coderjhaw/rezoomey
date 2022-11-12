@@ -12,6 +12,10 @@ body {
   background: rgba(17,20,29,255);
 }
 
+header {
+  padding: 20px 200px 0 200px;
+}
+
 .navbar {
   position: sticky;
   width: 100%;
@@ -21,10 +25,20 @@ body {
 
 .navbar .logo {
   padding: 0.75rem 1rem;
-  font-size: 1.1rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 900;
   color: white;
+  cursor: pointer;
+  
+}
+
+.navbar .logo span {
+  transition: color 0.4s;
+}
+
+.navbar .logo span:hover {
+  color: rgb(3, 153, 3);
 }
 
 .navbar ul {
@@ -32,20 +46,33 @@ body {
   padding-right: 2rem;
   display: flex;
   list-style-type: none;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
 }
 
 .navbar ul li a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 24px;
   color: rgb(185, 182, 182);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.navbar ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: azure;
+  transition: width .3s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
 .navbar ul li a:hover {
   color: white;
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
 }
 
 .navbar-links {
@@ -62,7 +89,7 @@ body {
 }
 
 .hire-me button {
-  background:  rgba(35, 35, 235, 0.89);
+  background:  rgba(66, 66, 243, 0.89);
   border: none;
   padding: 5px 12px 5px 12px;
   border-radius: 3px;
@@ -70,6 +97,7 @@ body {
   cursor: pointer;
   transition: background 0.4s;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
 }
 
 
@@ -114,7 +142,7 @@ body {
 }
 
 
-@media  screen and (max-width: 580px) {
+@media  screen and (max-width: 850px) {
 
   .navbar {
     flex-direction: column;
