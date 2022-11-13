@@ -19,6 +19,8 @@
 
 </head>
 <body>
+
+  <!-- HEADER STARTS HERE -->
   <header>
     <div class="navbar">
       <div class="logo">
@@ -38,7 +40,7 @@
       <nav class="navbar-links">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about-me">About</a></li>
           <li><a href="#">Skillset</a></li>
           <li><a href="#">Experiences</a></li>
         </ul>
@@ -52,13 +54,16 @@
       </div>
     </div>
   </header>
+  <!-- HEADER ENDS HERE -->
 
+  <!-- MAIN CONTENT STARTS HERE  -->
   <main>
     <section class="home-page">
-      <h1>Software Engineer</h1>
+
+      <h1>I'm a Software <span class="auto-type"></span> </h1>
 
       <p class="description">
-        Connect with me through the following sites :
+        " SImplicity is the soul of efficiency " - Austin Freeman
       </p>
 
       <p class="icons-list">
@@ -77,9 +82,29 @@
         Learn More
       </button>
     </section>
+    <!-- MAIN CONTENT ENDS HERE -->
 
-    <section class="about">
-      <h1> About</h1>
+    <section id="about-me" class="about">
+      
+      <div class="aboutme-container">
+        <div class="left-section">
+          <h1>Joshua Ehd Silvio</h1>
+          <p>Computer Science</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipielit. Sunt sed ad possimus magm maiores.Ipa Lorem ipsum dolor sit amet, consectetur adiic Sunt sed ad posimus magnam maores. Ipsam as velt blanditiis debitis consequuntur mollita umenda nam obcaecati illo!</p>
+          <button>READ MORE</button>
+        </div>
+        <div class="middle-section">
+          <img src="img/Grad_Pic.jpg" alt="">
+        </div>
+        <div class="right-section">
+          <p>Sample text</p>
+          <p>Sample text</p>
+          <p>Sample text</p>
+          <button>dasda</button>
+        </div>
+      </div>
+      
+
 
     </section>
   </main>
@@ -92,5 +117,16 @@
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+
+    var typed = new Typed(".auto-type", {
+      strings: ['Engineer.', 'Test Engineer.'],
+      typeSpeed: 150,
+      backSpeed: 200,
+      loop: true
+    });
+  </script>
 </body>
 </html>
