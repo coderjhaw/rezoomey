@@ -12,21 +12,22 @@ responsiveMenuToggleButton.addEventListener('click', () => {
 
 // jquery
 
-$(document).ready(function() {
-  var scroll_start = 0;
-  var startchange = $('header');
-  var offset = startchange.offset();
+// $(document).ready(function() {
+//   var scroll_start = 0;
+//   var startchange = $('header');
+//   var offset = startchange.offset();
 
 
-  if (startchange.length) {
-    $(document).scroll(function () {
-        scroll_start = $(this).scrollTop();
-        if (scroll_start > offset.top) {
-            $("header").css('background-color', 'rgba(0,0,0,.75)');
-        } else {
-            $("header").css('background-color', 'transparent');
-        }
-    });
-  }
-  
-});
+//   if (startchange.length) {
+//     $(document).scroll(function () {
+//         scroll_start = $(this).scrollTop();
+//         if (scroll_start > offset.top) {
+//             $("header").css('background-color', 'rgba(0,0,0,0.9)');
+//             $("navbar-links").css('color', 'rgb(255,255,255)');
+//         } else {
+//             $("header").css('background-color', 'rgb(252, 255, 255)');
+//         }
+//     });
+//   }
+
+// });
